@@ -4,14 +4,11 @@
 }
 
 .AppLayout_Img {
-  @apply h-[100vh] absolute top-0 left-0 bottom-0 right-0 bg-cover bg-center bg-fixed;
-  img {
-    @apply w-full h-full;
-  }
+  @apply h-[100vh] fixed z-0 top-0 left-0 bottom-0 right-0 bg-cover bg-center bg-fixed;
 }
 
 .AppLayout_Cont {
-  @apply backdrop-blur-sm min-h-[100vh];
+  @apply relative backdrop-blur-2xl  z-10 min-h-[100vh] pb-20;
   //
 }
 

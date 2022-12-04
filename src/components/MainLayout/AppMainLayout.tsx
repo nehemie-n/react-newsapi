@@ -7,9 +7,10 @@ export const AppMainLayout = ({ children }: { children?: any }) => {
   return (
     <div className="AppLayout">
       {/* Back Imge */}
-      <div className="AppLayout_Img">
-        <img src={img} alt="" />
-      </div>
+      <div
+        className="AppLayout_Img"
+        style={{ backgroundImage: `url(${img})` }}
+      ></div>
       {/* Content */}
       <div className="AppLayout_Cont">
         {/*  */}

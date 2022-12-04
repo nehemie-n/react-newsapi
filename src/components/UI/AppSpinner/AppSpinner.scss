@@ -1,0 +1,42 @@
+.AppSpinner {
+  @apply text-center;
+  //
+  .AppSpinner_H {
+    @apply flex items-center justify-center m-auto;
+  }
+  // sm
+  &.AppSpinner_sm {
+    @apply my-4;
+    .AppSpinner_H {
+      @apply w-10 h-10  mx-auto;
+    }
+    .AppSpinner_T {
+      @apply text-xs;
+    }
+  }
+  // md
+  &.AppSpinner_md {
+    @apply my-8;
+    .AppSpinner_H {
+      @apply w-16 h-16  mx-auto;
+    }
+    .AppSpinner_T {
+      @apply text-sm;
+    }
+  }
+  // lg
+  &.AppSpinner_lg {
+    @apply my-12;
+    .AppSpinner_H {
+      @apply w-24 h-24  mx-auto;
+    }
+    .AppSpinner_T {
+      @apply text-base;
+    }
+  }
+
+  // text only
+  .AppSpinner_T {
+    @apply opacity-50;
+  }
+}
