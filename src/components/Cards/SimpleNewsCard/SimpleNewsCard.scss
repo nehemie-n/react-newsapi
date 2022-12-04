@@ -1,0 +1,29 @@
+.SimpleNewsCard {
+  @apply rounded-lg  bg-white min-h-[350px] shadow-lg  flex flex-col;
+
+  // The one with back image
+  .SimpleNewsCard_Img {
+    @apply rounded-md bg-primary-black bg-cover bg-no-repeat bg-center cursor-pointer;
+    min-height: calc(100% - 42px);
+    height: calc(100% - 42px);
+
+    // the headline
+    .SimpleNewsCard_Cont {
+      min-height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+      @apply rounded-md font-medium p-4 flex flex-col justify-end transition-all;
+      @apply hover:pb-6;
+    }
+  }
+
+  // Actions
+  .SimpleNewsCard_Acts {
+    @apply h-full; // ocupy remaining space
+    @apply py-1 px-3; // just like image part;
+    @apply flex justify-between items-center text-black;
+    .SimpleNewsCard_Sou {
+      width: 70%;
+      @apply text-sm font-bold text-ellipsis;
+    }
+  }
+}

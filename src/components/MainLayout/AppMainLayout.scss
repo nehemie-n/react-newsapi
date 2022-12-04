@@ -1,0 +1,29 @@
+// Main Layout
+.AppLayout {
+  @apply bg-second-black min-h-[100vh] text-white relative;
+}
+
+.AppLayout_Img {
+  @apply h-[100vh] absolute top-0 left-0 bottom-0 right-0 bg-cover bg-center bg-fixed;
+  img {
+    @apply w-full h-full;
+  }
+}
+
+.AppLayout_Cont {
+  @apply backdrop-blur-sm min-h-[100vh];
+  //
+}
+
+//
+.AppScreen {
+  @apply mx-auto max-w-screen-xl;
+}
+
+// Logo
+.AppLogo {
+  @apply p-1 inline-block;
+  img {
+    @apply object-contain object-center h-full inline-block;
+  }
+}

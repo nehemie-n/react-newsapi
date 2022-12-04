@@ -1,0 +1,58 @@
+//
+//
+// App Pill
+.AppPill {
+  @apply transition-all;
+  // Size
+  &.AppPill_Lg {
+    @apply text-base font-semibold;
+  }
+  &.AppPill_Sm {
+    @apply text-sm font-light;
+  }
+  &.AppPill_Md {
+    @apply text-base font-medium;
+  }
+  // Shape
+  &.AppPill_Round {
+    @apply rounded-full;
+    // Size
+    &.AppPill_Lg {
+      @apply px-8 py-6;
+    }
+    &.AppPill_Md {
+      @apply px-6 py-2;
+    }
+    &.AppPill_Sm {
+      @apply px-4 py-3;
+    }
+  }
+
+  &.AppPill_Circle {
+    @apply flex items-center justify-center;
+    @apply rounded-full;
+    // Size
+    &.AppPill_Lg {
+      @apply h-14 w-14;
+    }
+    &.AppPill_Sm {
+      @apply h-9 w-9;
+    }
+    &.AppPill_Md {
+      @apply h-11 w-11;
+    }
+  }
+
+  // Colors
+  &.AppPill_Primary {
+    &.AppPill_Ghost {
+      @apply bg-slate-100/5 text-primary-pink hover:bg-gray-900;
+    }
+    &:not(.AppPill_Ghost) {
+      @apply bg-primary-pink text-white hover:bg-primary-pink/80;
+    }
+  }
+  &.AppPill_Default {
+    @apply text-white bg-gray-800 hover:bg-gray-900;
+  }
+}

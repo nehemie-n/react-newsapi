@@ -1,0 +1,17 @@
+.AppSearch {
+  @apply flex justify-center items-center;
+  .AppSearch_F {
+    @apply bg-white rounded-md flex justify-center;
+  }
+
+  input#AppSearch {
+    @apply text-black min-w-[800px];
+    @apply px-4 py-5 rounded-md leading-4;
+  }
+
+  .AppSearch_Icon {
+    @apply pl-6 pr-4 flex justify-center items-center;
+  }
+}
+
+// react-stack-grid @todo install

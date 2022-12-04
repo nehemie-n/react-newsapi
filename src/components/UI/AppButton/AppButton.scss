@@ -1,0 +1,50 @@
+// App Button
+.AppBtn {
+  // Size
+  &.AppBtn_Lg {
+    @apply text-base font-semibold;
+  }
+  &.AppBtn_Sm {
+    @apply text-sm font-light;
+  }
+  &.AppBtn_Md {
+    @apply text-base font-medium;
+  }
+  // Shape
+  &.AppBtn_Round {
+    @apply rounded-full;
+    // Size
+    &.AppBtn_Lg {
+      @apply px-8 py-6;
+    }
+    &.AppBtn_Md {
+      @apply px-6 py-2;
+    }
+    &.AppBtn_Sm {
+      @apply px-4 py-3;
+    }
+  }
+
+  &.AppBtn_Circle {
+    @apply flex items-center justify-center;
+    @apply rounded-full;
+    // Size
+    &.AppBtn_Lg {
+      @apply h-14 w-14;
+    }
+    &.AppBtn_Sm {
+      @apply h-9 w-9;
+    }
+    &.AppBtn_Md {
+      @apply h-11 w-11;
+    }
+  }
+
+  // Colors
+  &.AppBtn_Primary {
+  }
+  &.AppBtn_Default {
+    @apply text-white bg-gray-800 hover:bg-gray-900;
+  }
+}
+
