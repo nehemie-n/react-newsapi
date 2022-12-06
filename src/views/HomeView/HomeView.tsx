@@ -18,8 +18,14 @@ export function HomeView() {
 
   // anytime props change we fetch news
   useEffect(() => {
-    setState(fetchTrending());
-  });
+    fetchTrending()
+      .then((resp) => {
+        setState(resp);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
   // document title
   document.title = "#What's Up? Home of news!";

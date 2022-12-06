@@ -1,19 +1,17 @@
 import axios from "axios";
 import { Api } from "./api";
-import { RecentNews } from "./interface";
+import { Article, RecentNews } from "./interface";
 import trending from "./trending.json";
 
-export const fetchTrending = () => {
-  return trending;
+export const fetchTrending = (): Promise<Article[]> => {
+  return Promise.resolve(trending as Article[]);
   const lang = "us";
   return Api.get<RecentNews>(`/v2/top-headlines?country=${lang}`).then(
     (resp) => {
-      console.log(resp.data);
-      return resp.data;
+      return resp.data.articles;
     }
   );
 };
-export default function () {}
 
 const categories = [
   "regional",
