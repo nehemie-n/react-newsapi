@@ -9,3 +9,38 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+//
+// scrollbars
+*::-webkit-scrollbar {
+  width: 15px;
+  scrollbar-color: var(--secondary) var(--primary);
+  @apply bg-second-black;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  @apply bg-second-black;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 2px solid;
+  @apply border-second-black;
+  @apply bg-slate-800 rounded-full cursor-pointer;
+  @apply transition-all;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  @apply transition-all;
+  @apply bg-slate-600;
+}
+
+/* The corner of the scrollbar, where the two scrollbars meet */
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* The down and right arrows of the scrollbar */
+::-webkit-scrollbar-button {
+  background-color: transparent;
+}

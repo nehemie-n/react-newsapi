@@ -1,9 +1,13 @@
 import img from "../../assets/hero-dark.jpg";
-import { AppHeader } from "../AppHeader";
+import { AppHeader } from "../AppHeader/AppHeader";
 import "./AppMainLayout.scss";
 
+interface Props {
+  showSearch?: boolean;
+  children?: any;
+}
 // classNames('foo', { bar: true }); // => 'foo bar'
-export const AppMainLayout = ({ children }: { children?: any }) => {
+export const AppMainLayout = ({ children, showSearch = true }: Props) => {
   return (
     <div className="AppLayout">
       {/* Back Imge */}
@@ -14,9 +18,7 @@ export const AppMainLayout = ({ children }: { children?: any }) => {
       {/* Content */}
       <div className="AppLayout_Cont">
         {/*  */}
-        <div>
-          <AppHeader></AppHeader>
-        </div>
+        <AppHeader showSearch={showSearch}></AppHeader>
         {/*  */}
         <div>{children}</div>
       </div>

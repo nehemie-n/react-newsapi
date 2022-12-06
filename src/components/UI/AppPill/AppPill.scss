@@ -8,7 +8,7 @@
     @apply text-base font-semibold;
   }
   &.AppPill_Sm {
-    @apply text-sm font-light;
+    @apply text-sm font-medium;
   }
   &.AppPill_Md {
     @apply text-base font-medium;
@@ -24,7 +24,7 @@
       @apply px-6 py-2;
     }
     &.AppPill_Sm {
-      @apply px-4 py-3;
+      @apply px-4 py-2;
     }
   }
 

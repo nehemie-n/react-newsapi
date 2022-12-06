@@ -12,9 +12,9 @@
   //
 }
 
-//
+// the screen can't exceed a certain size
 .AppScreen {
-  @apply mx-auto max-w-screen-xl;
+  @apply mx-auto max-w-screen-2xl;
 }
 
 // Logo

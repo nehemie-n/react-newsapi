@@ -1,21 +1,39 @@
-import "./AppSearch.scss";
+import classNames from "classnames";
+import { FormEvent, useState } from "react";
 import { HiSearch } from "react-icons/hi";
-import { EventHandler, FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./AppSearch.scss";
 
-interface Props {}
-export const AppSearch = () => {
+interface Props {
+  size?: "sm" | "md";
+}
+export const AppSearch = ({ size = "md" }: Props) => {
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   function submit(e: FormEvent) {
     e.preventDefault();
+    goToSearchPage();
   }
 
+  function goToSearchPage() {
+    navigate("/search");
+  }
+
+  const classes = classNames({
+    AppSearch: true,
+    AppSearch_Sm: size == "sm",
+    AppSearch_Md: size == "md",
+  });
+
+  const iconSize = size == "md" ? 30 : 20;
+
   return (
-    <div className="AppSearch">
-      <form className="AppSearch_F" action="#">
+    <div className={classes}>
+      <form onSubmit={submit} className="AppSearch_F" action="#">
         {/*  */}
         <label htmlFor="AppSearch" className="AppSearch_Icon">
-          <HiSearch color="black" size={30} />
+          <HiSearch color="black" size={iconSize} />
         </label>
         {/*  */}
         {/* <label htmlFor="AppSeach"></label> */}
@@ -27,7 +45,7 @@ export const AppSearch = () => {
           onChange={(e) => setQuery(e.target.value)}
         />
         {/*  */}
-        <button onSubmit={submit} hidden></button>
+        <button type="submit" onSubmit={submit} hidden></button>
       </form>
     </div>
   );

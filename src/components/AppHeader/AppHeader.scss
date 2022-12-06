@@ -1,0 +1,14 @@
+.AppHeader {
+  @apply px-2 md:px-2;
+  @apply transition-all;
+  @apply sticky top-0 z-40;
+  @apply bg-transparent;
+
+  &.AppHeader_Unsticky {
+    @apply pt-10 pb-8 mb-10;
+  }
+  &.AppHeader_Sticky {
+    @apply px-2 py-4 mb-6;
+    @apply bg-second-black/90 backdrop-blur-lg;
+  }
+}

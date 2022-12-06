@@ -1,0 +1,12 @@
+.AppDropdown {
+  @apply relative;
+}
+.AppDropdown_Menu {
+  @apply z-10 w-44;
+  @apply rounded shadow bg-primary-black ;
+  @apply absolute top-12;
+
+  &_hidden {
+    @apply hidden;
+  }
+}

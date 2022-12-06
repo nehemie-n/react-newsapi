@@ -1,6 +1,8 @@
 import { AppButton } from "./UI/AppButton/AppButton";
 import { HiCog } from "react-icons/hi";
 import { AppSpace } from "./AppSpace";
+import { AppDropdown } from "./UI/AppDropdown/AppDropdown";
+import { Menu, MenuItem } from "./UI/AppDropdown/MenuItem";
 /**
  * Navigation at the right side
  * @param props
@@ -11,15 +13,24 @@ export function AppTopNav() {
       <div className="flex items-center md:order-2">
         <AppSpace>
           {/*  */}
-          <AppButton shape="round">English</AppButton>
+          <AppDropdown
+            target={<AppButton shape="round">English</AppButton>}
+            menu={
+              <Menu>
+                <MenuItem>English</MenuItem>
+                <MenuItem>French</MenuItem>
+                <MenuItem>Chinese</MenuItem>
+              </Menu>
+            }
+          ></AppDropdown>
           {/*  */}
           <AppButton shape="circle">
             <HiCog />
           </AppButton>
           {/* Avatar */}
-          <button>
+          {/* <button>
             <img src="" alt="" />
-          </button>
+          </button> */}
           {/*  */}
         </AppSpace>
       </div>

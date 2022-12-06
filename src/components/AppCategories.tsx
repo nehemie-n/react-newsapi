@@ -1,17 +1,48 @@
+import classNames from "classnames";
 import { AppPill } from "./UI/AppPill/AppPill";
+interface Props {
+  direction?: "vertical" | "horizontal";
+  size?: "md" | "sm" | "lg";
+}
+export const AppCategories = ({
+  direction = "horizontal",
+  size = "md",
+}: Props) => {
+  const categories = [
+    "Politics",
+    "Entertainment",
+    "Education",
+    "Sports",
+    "History",
+    "Technology",
+    "UI/UX Designing",
+  ];
 
-export const AppCategories = () => {
-  const categories = ["Politics", "Entertainment", "Education", "History"];
+  const classes = classNames({
+    "text-center flex gap-4": true,
+    "justify-center flex-row flex-wrap": direction == "horizontal",
+    "justify-center flex-col items-start": direction == "vertical",
+  });
 
   return (
-    <div className="text-center flex justify-center gap-4">
-      <AppPill type="primary">#Al Categories</AppPill>
+    <div className={classes}>
+      <span key="all">
+        <AppPill size={size} type="primary">
+          #All Categories
+        </AppPill>
+      </span>
       {categories.map((cate) => {
-        return <AppPill key={cate}>#{cate}</AppPill>;
+        return (
+          <span key={cate}>
+            <AppPill size={size}>#{cate}</AppPill>
+          </span>
+        );
       })}
-      <AppPill ghost type="primary">
-        +12 Categories
-      </AppPill>
+      <span>
+        <AppPill size={size} ghost type="primary">
+          +12 Categories
+        </AppPill>
+      </span>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { HomeView } from "./views/HomeView/HomeView";
-import { ResultsView } from "./views/ResultsView";
+import { ResultsView } from "./views/ResultsView/ResultsView";
 
 function App() {
   return (

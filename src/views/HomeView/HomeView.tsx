@@ -13,6 +13,7 @@ import "./HomeView.scss";
 
 export function HomeView() {
   const [state, setState] = useState<any>();
+  const [showSearch, setShowSearch] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 
   // anytime props change we fetch news
@@ -23,8 +24,17 @@ export function HomeView() {
   // document title
   document.title = "#What's Up? Home of news!";
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 450) {
+      setShowSearch(true);
+    }
+    if (window.scrollY < 440) {
+      setShowSearch(false);
+    }
+  });
+
   return (
-    <AppMainLayout>
+    <AppMainLayout showSearch={showSearch}>
       {/*  */}
       <AppScreen>
         <div className="HomeView_Hero">
@@ -36,7 +46,9 @@ export function HomeView() {
             </AppSpace>
           </div>
           {/*  */}
-          <AppCategories />
+          <div className="mx-auto max-w-screen-lg">
+            <AppCategories />
+          </div>
           {/*  */}
           <div className="py-6">
             <AppSearch></AppSearch>
@@ -46,9 +58,14 @@ export function HomeView() {
         {/*  */}
         {/* Simple news results */}
         {Array.isArray(state) ? (
-          <div className="grid grid-cols-4 gap-6">
-            {state.map((article: Article) => {
-              return <SimpleNewsCard article={article}></SimpleNewsCard>;
+          <div className="grid grid-cols-5 gap-6">
+            {state.map((article: Article, index) => {
+              return (
+                <SimpleNewsCard
+                  key={article.url + index}
+                  article={article}
+                ></SimpleNewsCard>
+              );
             })}
           </div>
         ) : null}
