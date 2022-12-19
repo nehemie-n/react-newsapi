@@ -15,6 +15,7 @@ export interface Article {
 export interface RecentNews {
   status: "ok";
   articles: Article[];
+  totalResults: number
 }
 
 export type Trending = Article[];

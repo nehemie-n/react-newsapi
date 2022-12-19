@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 37,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+            "author": "Elliot Smith",
+            "title": "Bank of England hikes key rate by 50 basis points, will continue to respond 'forcefully' if needed - CNBC",
+            "description": "The central bank's Monetary Policy Committee voted 6-3 in favor of the half-percentage-point hike.",
+            "url": "https://www.cnbc.com/2022/12/15/bank-of-england-hikes-key-rate-by-50-basis-points-will-continue-to-respond-forcefully-if-needed.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/107145528-1667482432800-gettyimages-1244453321-AFP_32MQ2UG.jpeg?v=1671106042&w=1920&h=1080",
+            "publishedAt": "2022-12-15T12:07:22Z",
+            "content": "LONDON The Bank of England on Thursday hiked its main interest rate by 50 basis points and signaled that more tightening will be needed to rein in inflation.\r\nThe Monetary Policy Committee voted 6-3 … [+2433 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Srinivasan Sivabalan",
+            "title": "Equities Decline as Fed Shock Halts Global Rally: Markets Wrap - Yahoo Finance",
+            "description": "(Bloomberg) -- US equity-index futures and European stocks declined after the Federal Reserve rebuffed expectations for a dovish tilt and said interest rates...",
+            "url": "https://finance.yahoo.com/news/asian-stocks-open-lower-hawkish-224244888.html",
+            "urlToImage": "https://media.zenfs.com/en/bloomberg_markets_842/066a90084d256fac1792b5b3d00f1d50",
+            "publishedAt": "2022-12-15T12:06:32Z",
+            "content": "(Bloomberg) -- US equity-index futures and European stocks declined after the Federal Reserve rebuffed expectations for a dovish tilt and said interest rates will go higher for longer.\r\nMost Read fro… [+3929 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Unexplained leak from docked Soyuz spacecraft cancels Russian ISS spacewalk - Reuters",
+            "description": "A routine spacewalk by two Russian cosmonauts aboard the International Space Station (ISS) was called off as it was about to begin after flight controllers noticed a stream of liquid spewing from a docked Soyuz spacecraft, a NASA webcast showed.",
+            "url": "https://www.reuters.com/lifestyle/science/unexplained-leak-docked-soyuz-spacecraft-cancels-russian-iss-spacewalk-2022-12-15/",
+            "urlToImage": "https://www.reuters.com/resizer/mWyhuovSgZFo3cBkzyHW_U5B4v0=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/MZREVYCYTZLPHNNAVRWYTZEVNY.jpg",
+            "publishedAt": "2022-12-15T11:28:00Z",
+            "content": "Dec 14 (Reuters) - A routine spacewalk by two Russian cosmonauts aboard the International Space Station (ISS) was called off as it was about to begin after flight controllers noticed a stream of liqu… [+2909 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Nouran Salahieh",
+            "title": "Tornadoes leave a trail of destruction in Louisiana and the Southeast, killing at least 3, collapsing homes and knocking out power - CNN",
+            "description": "A severe weather system cutting through the South has left a trail of destruction in Louisiana, killing at least three people and injuring dozens of others as violent tornadoes touched down, collapsing homes, turning debris into projectiles and knocking out p…",
+            "url": "https://www.cnn.com/2022/12/15/weather/nationwide-massive-storm-tornadoes-thursday/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/221214173311-03-louisiana-storm-damage-1214-arabi.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2022-12-15T11:24:00Z",
+            "content": "A severe weather system cutting through the South has left a trail of destruction in Louisiana, killing at least three people and injuring dozens of others as violent tornadoes touched down, collapsi… [+6465 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Musk cashes out another $3.6 bln in Tesla stock - Reuters",
+            "description": "Tesla <a href=\"https://www.reuters.com/companies/TLSA.O\" target=\"_blank\">(TLSA.O)</a> boss Elon Musk disclosed another $3.6 billion in stock sales on Wednesday, taking his total near $40 billion this year and frustrating investors as the company's shares wall…",
+            "url": "https://www.reuters.com/business/autos-transportation/elon-musk-sells-22-mln-tesla-shares-worth-36-bln-filing-2022-12-15/",
+            "urlToImage": "https://www.reuters.com/resizer/oKcihfQJLdUWkA-MYr99ctAZj2Y=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/VE54RRYBSNLAZJAPZ4ONMGFZEM.jpg",
+            "publishedAt": "2022-12-15T11:13:00Z",
+            "content": "Dec 15 (Reuters) - Tesla (TLSA.O) boss Elon Musk disclosed another $3.6 billion in stock sales on Wednesday, taking his total near $40 billion this year and frustrating investors as the company's sha… [+2801 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Rolling Stone"
+            },
+            "author": "Marlow Stern",
+            "title": "Prince Harry Reveals ‘Terrifying’ Fight With a Screaming Prince William in Front of Queen - Rolling Stone",
+            "description": "The final episodes of the Netflix docuseries ‘Harry & Meghan’ sees the quasi-royal open up a bit about his brother, and Meghan Markle share a message of support from Beyoncé.",
+            "url": "https://www.rollingstone.com/tv-movies/tv-movie-recaps/harry-and-meghan-markle-netflix-prince-harry-fight-prince-william-queen-elizabeth-beyonce-1234647860/",
+            "urlToImage": "https://www.rollingstone.com/wp-content/uploads/2022/12/GettyImages-1232358729.jpg?w=1600&h=900&crop=1",
+            "publishedAt": "2022-12-15T10:58:55Z",
+            "content": "The first three episodes of Harry &amp; Meghan, a Netflix “global event” (their words) chronicling Prince Harry and Meghan Markle’s tabloid-ravaged love story, from the royal couple’s first date to t… [+4880 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Zeke Miller",
+            "title": "White House reveals winter COVID-19 plans, more free tests - The Associated Press",
+            "description": "WASHINGTON (AP) — The Biden administration  is again making some free COVID-19 tests <a href=\"Summary = The Biden administration is once again making some free COVID-19 tests available to all American households, as it unveils its contingency plans for potent…",
+            "url": "https://apnews.com/2b015ef4e3c97520a3981c47d00467c3",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/676708769fc5411dbb3103e7ae4345d4/3000.webp",
+            "publishedAt": "2022-12-15T10:07:42Z",
+            "content": "WASHINGTON (AP) The Biden administration is again making some free COVID-19 tests available to all U.S. households as it unveils its contingency plans for potential coronavirus surges this winter.\r\nA… [+1823 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Rob Picheta",
+            "title": "British nurses launch historic strike, as pay and staffing crises threaten the NHS - CNN",
+            "description": "Nurses across much of the UK launched a historic strike on Thursday, as they walked out of hospitals and onto picket lines after several years of falling pay and declining standards left the country's nationalized health care system in a state of crisis.",
+            "url": "https://www.cnn.com/2022/12/15/business/uk-nurses-strike-thursday-nhs-gbr-intl/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/221215083219-01-nurse-strike-121522.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2022-12-15T08:43:00Z",
+            "content": "Nurses across much of the UK launched a historic strike on Thursday, as they walked out of hospitals and onto picket lines after several years of falling pay and declining standards left the countrys… [+7410 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Sandra Gonzalez",
+            "title": "Ellen DeGeneres 'heartbroken' over death of Stephen 'tWitch' Boss - CNN",
+            "description": "Ellen DeGeneres has issued a statement regarding the death of her former talk show's longtime DJ and co-executive producer, Stephen \"tWitch\" Boss, saying on Wednesday that she's \"heartbroken\" over his passing.",
+            "url": "https://www.cnn.com/2022/12/14/entertainment/ellen-degeneres-twitch-statement/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/221214125516-stephen-twitch-boss-ellen-degeneres-restricted.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2022-12-15T08:27:00Z",
+            "content": "Editors Note: If you or someone you know is struggling with suicidal thoughts or mental health matters, please call the National Suicide Prevention Lifeline at 800-273-8255 to connect with a trained … [+3236 chars]"
+        },
+        {
+            "source": {
+                "id": "axios",
+                "name": "Axios"
+            },
+            "author": "Herb Scribner",
+            "title": "Musk threatens legal action against Twitter user who tracked his jet - Axios",
+            "description": "The user’s account was also suspended, raising questions about Musk's commitment to free speech on the platform.",
+            "url": "https://www.axios.com/2022/12/14/twitter-elon-musk-jet-tracker-account-suspended",
+            "urlToImage": "https://images.axios.com/eJBvDeWY2-aj-6HsFY4sliU8Cr4=/0x75:3000x1763/1366x768/2022/12/14/1671031516066.jpg",
+            "publishedAt": "2022-12-15T07:18:49Z",
+            "content": "Twitter has clipped the wings of the account that actively tracked Elon Musk's private jet, the account's owner said Wednesday before his personal account was also suspended.\r\nWhy it matters: The sus… [+2337 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fox Business"
+            },
+            "author": "Greg Wehner",
+            "title": "TikTok ban is not if but when - Fox Business",
+            "description": "FCC Chairman Brendan Carr told Fox Business on Wednesday it was not a matter of if TikTok would be banned in the United States, but when.",
+            "url": "https://www.foxbusiness.com/politics/tiktok-ban-not-if-but-when",
+            "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2022/06/0/0/TikTok-Logo.jpg?ve=1&tl=1",
+            "publishedAt": "2022-12-15T07:15:12Z",
+            "content": "TikTok continued to take the punches this week as several states implemented bans on the social media platform and U.S. lawmakers joined together for a bipartisan proposal to stop the company from co… [+5094 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "NBA Top 10 Plays of the Night | December 14, 2022 - NBA",
+            "description": "Never miss a moment with the latest news, trending stories and highlights to bring you closer to your favorite players and teams.Download now ➡ https://app.l...",
+            "url": "https://www.youtube.com/watch?v=BJ9fPLOEo9s",
+            "urlToImage": "https://i.ytimg.com/vi/BJ9fPLOEo9s/maxresdefault.jpg",
+            "publishedAt": "2022-12-15T06:45:53Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Athletic"
+            },
+            "author": "Anthony Slater",
+            "title": "After Steph Curry’s shoulder injury, what’s next for struggling Warriors? - The Athletic",
+            "description": "The 14-15 Warriors already faced a stiffening challenge before their best player went down. The near term just got a whole lot trickier.",
+            "url": "https://theathletic.com/4003579/2022/12/15/warriors-steph-curry-injury-what-next/",
+            "urlToImage": "https://cdn.theathletic.com/app/uploads/2022/12/15004442/USATSI_19625992-1024x682.jpg",
+            "publishedAt": "2022-12-15T06:34:46Z",
+            "content": "INDIANAPOLIS About 30 minutes after the Warriors dropped to 2-13 on the road, Steph Curry sat at his Indianapolis locker with his left arm dangling to his side in an immobile position. The training s… [+7561 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "KTLA Los Angeles"
+            },
+            "author": "Josh DuBose, John Fenoglio",
+            "title": "'Biblical' drought likely to lead to more water restrictions - KTLA Los Angeles",
+            "description": "The Metropolitan Water District has declared a drought emergency for all of Southern California after officials announced that conditions on the Colorado River, the Southland’s primary water supply, are dire and getting worse.   Mandatory water restrictions c…",
+            "url": "https://ktla.com/news/local-news/metropolitan-water-district-declares-drought-emergency-for-all-southern-california/",
+            "urlToImage": "https://ktla.com/wp-content/uploads/sites/4/2022/12/GettyImages-1242581854.jpg?w=1280",
+            "publishedAt": "2022-12-15T06:05:05Z",
+            "content": "The Metropolitan Water District has declared a drought emergency for all of Southern California after officials announced that conditions on the Colorado River, the Southlands primary water supply, a… [+2786 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Suedi Murekezi: Russia frees US man in Ukraine prisoner swap - BBC",
+            "description": "The crypto investor was let go in a deal that saw 64 Ukrainian troops released, according to officials.",
+            "url": "https://www.bbc.com/news/world-us-canada-63981510",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/6FAE/production/_128009582_screenshot2022-12-14at6.09.37pm.png",
+            "publishedAt": "2022-12-15T02:58:43Z",
+            "content": "A US citizen held since June is among dozens released in a prisoner swap between Ukraine and Russia. \r\nUkrainian President Volodymr Zelensky said in his nightly address Ukraine had received 64 soldie… [+1594 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "Henry Cavill Done as Superman, James Gunn Confirms - Collider",
+            "description": null,
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMiRmh0dHBzOi8vY29sbGlkZXIuY29tL2hlbnJ5LWNhdmlsbC1zdXBlcm1hbi1yZWNhc3QtamFtZXMtZ3Vubi1jb21tZW50cy_SAQA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2022-12-15T02:12:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "Lauren Peller",
+            "title": "House approves funding extension to avert government shutdown, buying time for spending deal - ABC News",
+            "description": "A shutdown is set to start on Friday.",
+            "url": "https://abcnews.go.com/Politics/house-approves-funding-extension-avert-government-shutdown-buying/story?id=95324941",
+            "urlToImage": "https://s.abcnews.com/images/Politics/jeffries-clark-aguilar-lieu-rt-jef-221214_1671062100731_hpMain_16x9_992.jpg",
+            "publishedAt": "2022-12-15T01:15:53Z",
+            "content": "The House on Wednesday approved a short-term measure that extends funding for the federal government for another week, through Dec. 23, buying more time for lawmakers to finish crafting a massive omn… [+1583 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Sylvie Corbet",
+            "title": "France celebrates World Cup victory, fans cheer Morocco team - The Associated Press - en Español",
+            "description": "PARIS (AP) — Crowds in Paris and other French cities erupted in shouts of joy as France advanced to the World Cup final Wednesday, while disappointed Morocco fans mingled with the exuberant supporters of the winning team, paying tribute to the African country…",
+            "url": "https://apnews.com/article/world-cup-sports-soccer-nice-morocco-10b37df250a7ff78660eb3d8d34f610c",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/a42d40b37a1043fd89b1609989dd0e56/3000.webp",
+            "publishedAt": "2022-12-15T00:11:15Z",
+            "content": "PARIS (AP) Crowds in Paris and other French cities erupted in shouts of joy as France advanced to the World Cup final Wednesday, while disappointed Morocco fans mingled with the exuberant supporters … [+4219 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "",
+            "title": "Fantasy Football Week 15 Start 'Em & Sit 'Em: Isiah Pacheco, Alvin Kamara, Jerry Jeudy ready to deliver - CBS Sports",
+            "description": "Who you should have in your Week 15 lineups and who you should not",
+            "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-week-15-start-em-sit-em-isiah-pacheco-alvin-kamara-jerry-jeudy-ready-to-deliver/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2022/12/14/4e9bf855-0e6b-4013-ac74-9533ab07d217/thumbnail/1200x675/cfc4ce739be21769a35805bdba9813a0/isiah-pacheco-1400-us.jpg",
+            "publishedAt": "2022-12-15T00:10:00Z",
+            "content": "This is it. If you're still reading this column in Week 15, it likely means you have advanced to the Fantasy playoffs. So congratulations to you.\r\nNow, don't relax. There is still plenty of work to d… [+3696 chars]"
+        },
+        {
+            "source": {
+                "id": "ign",
+                "name": "IGN"
+            },
+            "author": "Jordan Sirani",
+            "title": "How to Watch Avatar: The Way of Water – Release Date and Streaming Status - IGN",
+            "description": "Wondering how and where to watch Avatar: The Way of Water? We have all of the details about James Cameron's latest epic.",
+            "url": "https://www.ign.com/articles/how-to-watch-avatar-the-way-of-water-release-date-and-streaming-status",
+            "urlToImage": "https://assets-prd.ignimgs.com/2022/11/02/avatarthewayofwaterofficialtrailer-ign-blogroll-1667398533501.jpg?width=1280",
+            "publishedAt": "2022-12-14T23:36:25Z",
+            "content": "Thanks in large part to its extraordinary visuals, Avatar ascended to the top of the box office to become the world's highest-grossing movie of all time. Now, 13 years later, James Cameron is taking … [+2564 chars]"
+        }
+    ]
+}

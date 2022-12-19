@@ -1,35 +1,37 @@
 import { useEffect, useState } from "react";
 import { AppCategories } from "../../components/AppCategories";
 import { AppSpace } from "../../components/AppSpace";
-import { SimpleNewsCard } from "../../components/Cards/SimpleNewsCard/SimpleNewsCard";
 import {
   AppMainLayout,
-  AppScreen,
+  AppScreen
 } from "../../components/MainLayout/AppMainLayout";
 import { AppSearch } from "../../components/UI/AppSearch/AppSearch";
-import { AppSpinner } from "../../components/UI/AppSpinner/AppSpinner";
-import { Article, fetchTrending } from "../../state";
+import { random } from "../../random";
+import { fetchTrending, resetQuery, useAppDispatch } from "../../store";
 import "./HomeView.scss";
+import { HomeViewResults } from "./HomeViewResults";
 
 export function HomeView() {
-  const [state, setState] = useState<any>();
-  const [showSearch, setShowSearch] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(true);
+  console.log(random + " home");
 
-  // anytime props change we fetch news
+  const [showSearch, setShowSearch] = useState<boolean>(false);
+
+  // search state
+  const dispatch = useAppDispatch();
+
+  // on mount we fetch trending
+  // and reset search
+  // on page render
   useEffect(() => {
-    fetchTrending()
-      .then((resp) => {
-        setState(resp);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    console.log("Rendered Home ", random());
+    dispatch(resetQuery()); // you can't change state directly in render
+    dispatch(fetchTrending());
   }, []);
 
-  // document title
-  document.title = "#What's Up? Home of news!";
+  // document title @todo: useTitle
+  document.title = `#What's Up? Home of news! ${random}`;
 
+  // on scroll
   window.addEventListener("scroll", () => {
     if (window.scrollY > 450) {
       setShowSearch(true);
@@ -49,6 +51,7 @@ export function HomeView() {
             <AppSpace size={5} direction="col">
               <h3>Heeey, do you know</h3>
               <h1>#What's Up?</h1>
+              {/* <h1>{query}</h1> */}
             </AppSpace>
           </div>
           {/*  */}
@@ -57,30 +60,13 @@ export function HomeView() {
           </div>
           {/*  */}
           <div className="py-6">
+            {}
             <AppSearch></AppSearch>
           </div>
           {/*  */}
         </div>
         {/*  */}
-        {/* Simple news results */}
-        {Array.isArray(state) ? (
-          <div className="grid grid-cols-5 gap-6">
-            {state.map((article: Article, index) => {
-              return (
-                <SimpleNewsCard
-                  key={article.url + index}
-                  article={article}
-                ></SimpleNewsCard>
-              );
-            })}
-          </div>
-        ) : null}
-        {/* Show loader */}
-        {loading ? (
-          <AppSpinner className="py-10" size="lg">
-            loading ...
-          </AppSpinner>
-        ) : null}
+        <HomeViewResults />
         {/*  */}
       </AppScreen>
     </AppMainLayout>

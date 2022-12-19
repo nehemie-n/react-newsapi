@@ -2,10 +2,11 @@ import { Children } from "react";
 
 interface MenuItemProps {
   children: any;
+  onClick: any;
 }
-export const MenuItem = ({ children }: MenuItemProps) => {
+export const MenuItem = ({ children, onClick }: MenuItemProps) => {
   return (
-    <li className="cursor-pointer">
+    <li onClick={onClick} className="cursor-pointer">
       <div className="block py-2 px-4  text-white  hover:bg-second-black ">
         {children}
       </div>

@@ -1,4 +1,4 @@
-import { Article } from "../../../state";
+import { Article } from "../../../api";
 import { AppSpace } from "../../AppSpace";
 import "./ElasticNewsCard.scss";
 import {
