@@ -14,7 +14,7 @@ commands:
     steps:
       - run:
           name: DetailsParams
-          command: echo << parameters._name>>
+          command: echo FROM PRINT_DETAILS << parameters._name>>
       
        
 # Define a job to be invoked later in a workflow.
@@ -70,6 +70,15 @@ jobs:
           name: "Print File"
           command: cat output.txt
 
+      - run:
+          name: "Cause Error"
+          command: return 1
+
+      # We run this when there was an exit status of zero from other commands
+      - run:
+          name: Upload Failed Tests
+          command: curl --data fail_tests.log http://example.com/error_logs
+          when: on_fail
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
