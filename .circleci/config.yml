@@ -27,9 +27,9 @@ jobs:
           name: "Write to file"
           command: echo "Hello Nehemie in file" > output.txt
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: .
           paths:
-            - output.txt
+            - .
 
   fileRead:
     docker:
@@ -37,7 +37,7 @@ jobs:
 
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: .
       
       - run:
           name: "Print File"
