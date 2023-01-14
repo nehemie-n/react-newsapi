@@ -34,7 +34,7 @@ jobs:
   fileRead:
     docker:
       - image: cimg/base:stable
-      
+
     steps:
       - attach_workspace:
           at: /tmp/workspace
@@ -51,5 +51,7 @@ workflows:
     jobs:
       - starter
       - filePersistance
-      - fileRead
+      - fileRead:
+          requires:
+            - "filePersistance"
         
