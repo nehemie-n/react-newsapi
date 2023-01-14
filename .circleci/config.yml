@@ -26,7 +26,10 @@ jobs:
       - checkout
       - run:
           name: "Env Var"
-          command: echo $CIRCLE_JOB
+          command: echo $CIRCLE_BRANCH
+      - run:
+          name: "Env Var Again"
+          command: echo ${CIRCLE_BRANCH}
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
