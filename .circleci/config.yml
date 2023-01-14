@@ -34,7 +34,11 @@ jobs:
       
       - run:
           name: Mk dir 
-          command: mkdir yoo && cd yoo cd ..
+          command: mkdir yoo
+      
+      - run:
+          name: cd yoo 
+          command: cd yoo
 
       - run:
           name: "Write to file"
