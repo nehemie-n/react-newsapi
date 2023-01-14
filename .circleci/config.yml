@@ -7,14 +7,14 @@ commands:
   print_details:
     description: Prints the parameter provided
     parameters:
-      name:
+      _name:
         type: string
         description: Name of Job based on what it https://circleci.com/docs/2.0/configuration-reference
 
     steps:
       - run:
-          name: CommandName
-          command: echo << parameters.name>>
+          name: DetailsParams
+          command: echo << parameters._name>>
       
        
 # Define a job to be invoked later in a workflow.
@@ -48,10 +48,10 @@ jobs:
           command: echo "Hello Nehemie in file" > output.txt
 
       - print_details:
-          name: Nehemie
+          _name: Nehemie
 
       - print_details:
-          name: ${CIRCLE_WORKFLOW_ID} ${CIRCLE_WORKFLOW_JOB_ID} 
+          _name: ${CIRCLE_WORKFLOW_ID} ${CIRCLE_WORKFLOW_JOB_ID} 
           
       - persist_to_workspace:
           root: .
