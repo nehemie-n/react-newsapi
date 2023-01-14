@@ -18,21 +18,31 @@ jobs:
           name: "verify"
           command: "echo We are verifying! <<pipeline.id>> "
 
-  envVariable:
+  filePersistance:
     docker:
       - image: cimg/base:stable
 
     steps:
-      - checkout
       - run:
-          name: "Env Var"
-          command: echo $CIRCLE_BRANCH
+          name: "Write to file"
+          command: echo "Hello Nehemie in file" > output.txt
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - output.txt
+
+  fileRead:
+    docker:
+      - image: cimg/base:stable
+      
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      
       - run:
-          name: "Env Var Again"
-          command: echo $CIRCLE_USERNAME
-      - run:
-          name: "My Name Out"
-          command: echo $MY_NAME
+          name: "Print File"
+          command: cat output.txt
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -40,4 +50,6 @@ workflows:
   starter-workflow:
     jobs:
       - starter
-      - envVariable
+      - filePersistance
+      - fileRead
+        
