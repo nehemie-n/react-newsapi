@@ -23,9 +23,23 @@ jobs:
       - image: cimg/base:stable
 
     steps:
+
+      - run:
+          name: Current Dir
+          command: pwd
+          
+      - run:
+          name: Current Dir List
+          command: dir
+      
+      - run:
+          name: Mk dir 
+          command: mkdir yoo && cd yoo cd ..
+
       - run:
           name: "Write to file"
           command: echo "Hello Nehemie in file" > output.txt
+          
       - persist_to_workspace:
           root: .
           paths:
